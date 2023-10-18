@@ -1,0 +1,141 @@
+/* Definición de variables CSS personalizadas */
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif; /* Fuente para encabezados */
+    --fuenteParrafos: 'Open Sans', sans-serif; /* Fuente para párrafos */
+
+    --primario: #784d3c; /* Color primario */
+    --blanco: #fff; /* Color blanco */
+    --negro: #000; /* Color negro */
+}
+
+/* Establecimiento de reglas de estilo para elementos HTML */
+
+/* Configuración global del documento */
+html {
+    box-sizing: border-box; /* Utiliza el modelo de caja con borde */
+    font-size: 62.5%; /* Establece el tamaño de fuente base al 62.5% para facilitar el uso de unidades rem */
+}
+
+/* Herencia del modelo de caja para todos los elementos y sus pseudo-elementos */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: var(--fuenteParrafos); /* Utiliza la fuente para párrafos */
+    font-size: 1.6rem; /* Tamaño de fuente base (16 píxeles) */
+    line-height: 2; /* Espaciado entre líneas 2 veces el tamaño de fuente */
+}
+
+/* Estilos globales */
+.contenedor {
+    max-width: 120rem; /* Ancho máximo del contenedor */
+    width: 90%; /* Ancho del contenedor con margen automático para centrar */
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos para encabezados (h1, h2, h3, h4) */
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading); /* Utiliza la fuente para encabezados */
+}
+
+h1 {
+    font-size: 4.8rem; /* Tamaño de fuente para h1 */
+}
+
+h2 {
+    font-size: 4rem; /* Tamaño de fuente para h2 */
+}
+
+h3 {
+    font-size: 3.2rem; /* Tamaño de fuente para h3 */
+}
+
+h4 {
+    font-size: 2.8rem; /* Tamaño de fuente para h4 */
+}
+
+img {
+    max-width: 100%; /* Evita que las imágenes se desborden de su contenedor */
+}
+
+/* Clases de utilidad */
+.no-margin {
+    margin: 0; /* Elimina los márgenes */
+}
+
+.no-padding {
+    padding: 0; /* Elimina el relleno */
+}
+
+.centrar-texto {
+    text-align: center; /* Centra el texto en su contenedor */
+}
+
+.white-text {
+    color: var(--blanco); /* Color de texto blanco */
+}
+
+
+/* Estilos para la barra de navegación */
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__texto{
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo__nombre{
+    font-weight: normal;
+}
+
+.logo__bold{
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+    
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
