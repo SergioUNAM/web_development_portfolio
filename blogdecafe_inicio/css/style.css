@@ -4,6 +4,7 @@
     --fuenteParrafos: 'Open Sans', sans-serif; /* Fuente para párrafos */
 
     --primario: #784d3c; /* Color primario */
+    --gris: #e1e1e1;
     --blanco: #fff; /* Color blanco */
     --negro: #000; /* Color negro */
 }
@@ -30,8 +31,7 @@ body {
 
 /* Estilos globales */
 .contenedor {
-    max-width: 120rem; /* Ancho máximo del contenedor */
-    width: 90%; /* Ancho del contenedor con margen automático para centrar */
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 
@@ -42,6 +42,7 @@ a {
 /* Estilos para encabezados (h1, h2, h3, h4) */
 h1, h2, h3, h4 {
     font-family: var(--fuenteHeading); /* Utiliza la fuente para encabezados */
+    line-height: 1.2;
 }
 
 h1 {
@@ -104,6 +105,10 @@ img {
     }
 }
 
+.barra{
+    padding-top: 4rem;
+}
+
 @media (min-width: 768px) {
     .barra{
         display: flex;
@@ -139,3 +144,92 @@ img {
     color: var(--blanco);
 }
 
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
+
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.widget-curso__info{
+    font-weight: normal;
+}
+
+.widget-curso__label,
+.widget-curso__info{
+    font-size: 2rem;
+
+}
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: 50%;;
+    }
+}
