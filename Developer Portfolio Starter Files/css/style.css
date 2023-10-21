@@ -185,6 +185,32 @@ img{
   background-color: #2e3037;
 }
 
-.contact{
-  background-color: aquamarine;
+.container__contact{
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_info{
+  flex: 1; 
+}
+
+.footer{
+  background-color: #2e3037;
+  height: 5rem;
+}
+
+.footer__container{
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.footer__icons{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  
 }
