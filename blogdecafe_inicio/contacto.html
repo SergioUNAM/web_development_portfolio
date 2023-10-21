@@ -37,15 +37,34 @@
     </header> <!-- header -->
 
     <main class="contenedor">
-        <h3 class="centrar-texto">Sobre nosotros</h3>
-        <div class="sobre-nosotros">
-            <div class="sobre-nosotros__imagen">
-                <img src="./img/nosotros.jpg" alt="sobre nosotros">
+        <h3 class="centrar-texto">Contacto</h3>
+        <div class="contacto-bg">
+
+        </div>
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre </label>
+                <input class="campo__field" id="nombre" type="text" placeholder="Tu nombre">
             </div>
 
-            <div class="sobre-nosotros__texto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ratione amet, quae magni, nemo in nesciunt tempora suscipit illo perferendis odio, quisquam distinctio asperiores maxime qui consequuntur accusantium alias quas dolore! Id asperiores, numquam aliquam a mollitia saepe corrupti voluptates! Nam ipsa iste nemo atque architecto velit temporibus veritatis eaque maxime perferendis! Assumenda reiciendis mollitia adipisci excepturi esse iure sit nemo placeat maiores quisquam itaque, voluptatem animi ea incidunt est possimus rerum fugiat a? Velit culpa magni tempore, tenetur, perspiciatis sed dolore saepe ipsam exercitationem corporis ab! Quod nisi in esse dignissimos atque at id dolorum sed. Nobis, ullam aut.</p>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail </label>
+                <input class="campo__field" id="email" type="email" placeholder="Tu email">
             </div>
+
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje </label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje" placeholder="Tu mensaje"></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+    
+        </form>
+
+        
     </main> <!-- contenedor -->
     
     <footer class="footer">
