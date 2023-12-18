@@ -14,6 +14,13 @@ Miscelaneus web development projects
    - Descripción: Estructura básica de una tienda en línea, solo maquetación y estilos no se ha utilizado lenguajes de backend
    - Tecnologías utilizadas: HTML, CSS.
 
+### 2. [blog de cafe]
+   - Descripción: Estructura básica un blog, con algunas entradas, sección de cursos y contacto.
+   - Tecnologías utilizadas: HTML, CSS.
+
+
+
+
 ## Cómo usar este repositorio
 
 Si deseas clonar este repositorio y ejecutar alguno de los proyectos, sigue estos pasos:
